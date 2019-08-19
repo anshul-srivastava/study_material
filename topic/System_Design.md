@@ -7,7 +7,7 @@
 
 
 ## Miscellaneous Topic
-* [Some System Design Interviews (solved)](e-books/Some_System_Design_Interviews_(solved).pdf)
+* [Some System Design Interviews (solved)](../e-books/Some_System_Design_Interviews_(solved).pdf)
 * [What is CDN & how it works?](https://www.incapsula.com/cdn-guide/what-is-cdn-how-it-works.html)
 * [How SSL works?](how_ssl_works.md)
 
