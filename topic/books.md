@@ -8,6 +8,6 @@
 * [Chris Richardson - Microservices Patterns](../e-books/Microservices_Patterns.pdf)
 * [Head First Design Patterns](../e-books/HeadFirstDesignPatterns.pdf)
 * [Seven Concurrency Models in Seven Weeks](../e-books/Seven-Concurrency-Models-in-Seven-Weeks.pdf)
-* [Cloud Architecture Patterns_ Using Microsoft Azure -Bill Wilder](../e-books/Cloud_Architecture_Patterns.pdf)
+* [Cloud Architecture Patterns Using Microsoft Azure -Bill Wilder](../e-books/Cloud_Architecture_Patterns.pdf)
 * [Designing Distributed Systems](../e-books/Designing_Distributed_Systems.pdf)
 * [Big Data Principles and Best Practices of Scalable Realtime Data Systems by Nathan Marz](../e-books/Big_Data_Principles_andBest_Practices_of_Scalable_Realtime_Data_Systems.pdf)
