@@ -2,7 +2,7 @@
 The definition of Single Responsibility Principle sounds simple i.e. one class has one responsibility. But in reality, designs go in the other direction. Lets see an example to understand. Take a look at the Employee class below –
 Employee.java
 
-```
+```Java
 public class Employee{
   private String employeeId;
   private String name;
@@ -27,7 +27,7 @@ Refactoring the Employee class so that it adheres to Single Responsibility Princ
 Let us now refactor the Employee class to make it own a single responsibility.
 Lets move the promotion determination logic from Employee class to the HRPromotions class like this –
 HRPromotions.java
-```
+```Java
 public class HRPromotions{
   public boolean isPromotionDueThisYear(Employee emp){
     //promotion logic implementation using the employee information passed
@@ -36,7 +36,7 @@ public class HRPromotions{
 ```
 Similarly, lets move the income tax calculation logic from Employee class to FinITCalculations class –
 FinITCalculations.java
-```
+```java
 public class FinITCalculations{
   public Double calcIncomeTaxForCurrentYear(Employee emp){
     //income tax logic implementation using the employee information passed
@@ -45,7 +45,7 @@ public class FinITCalculations{
 ```
 Our Employee class now remains with a single responsibility of maintaining core employee attributes –
 Employee.java adhering to Single Responsibility Principle
-```
+```java
 public class Employee{
   private String employeeId;
   private String name;
@@ -64,7 +64,7 @@ public class Employee{
 Example of Open/Closed Principle in Java
 Lets say we need to calculate areas of various shapes. We start with creating a class for our first shape Rectangle which has 2 attributes length & width–
 Rectangle.java
-```
+```java
 public class Rectangle{
  public double length;
  public double width;
@@ -72,7 +72,7 @@ public class Rectangle{
 ```
 Next we create a class to calculate area of this Rectangle which has a method calculateRectangleArea()which takes the Rectangle as an input parameter and calculates its area –
 AreaCalculator.java
-```
+```java
 public class AreaCalculator{
   public double calculateRectangleArea(Rectangle rectangle){
     return rectangle.length *rectangle.width;
@@ -81,14 +81,14 @@ public class AreaCalculator{
 ```
 So far so good. Now lets say we get our second shape circle. So we promptly create a new class Circle with a single attribute radius –
 Circle.java
-```
+```java
 public class Circle{
  public double radius;
 }
 ```
 Then we modify AreaCalculator class to add circle calculations through a new method calculateCircleArea() –
 AreaCalculator.java
-```
+```java
 public class AreaCalculator{
   public double calculateRectangleArea(Rectangle rectangle){
     return rectangle.length *rectangle.width;
@@ -105,7 +105,7 @@ Also, note that this design is not extensible, i.e what if complicated shapes ke
 Modification of above design to comply with Open/Closed Principle
 Let us now see a more elegant design which solves the flaws in the above design by adhering to the Open/Closed Principle. We will first of all make the design extensible. For this we need to first define a base typeShape and have Circle & Rectangle implement Shape interface –
 Shape.java
-```
+```java
 public interface Shape{
   public double calculateArea();
 }
@@ -131,7 +131,7 @@ The design has now undergone the following important changes to become extensibl
 * We have brought-in a degree of extensibility as shapes are now an instance of Shape interfaces. This allows us to use Shape instead of individual classes wherever these classes are used by any consumer.
 The last point above mentioned consumer of these shapes. In our case consumer will be the AreaCalculatorclass which would now look like this –
 AreaCalculator.java
-```
+```java
 public class AreaCalculator{
   public double calculateShapeArea(Shape shape){
     return shape.calculateArea();
