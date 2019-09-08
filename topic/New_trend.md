@@ -10,3 +10,11 @@
   
   * https://github.com/bitcoinbook/bitcoinbook/blob/develop/book.asciidoc
   * https://bitcoin.org/en/developer-guide#block-chain
+* [GoLang](https://tour.golang.org/list)
+  * [Microservice in Go Lang](https://ewanvalentine.io/microservices-in-golang-part-1/)
+* Micriservice Architecture
+* AI and ML
+  * 
+* Serverless Architecture
+* Quantom computing
+* 
