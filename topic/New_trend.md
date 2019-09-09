@@ -12,9 +12,11 @@
   * https://bitcoin.org/en/developer-guide#block-chain
 * [GoLang](https://tour.golang.org/list)
   * [Microservice in Go Lang](https://ewanvalentine.io/microservices-in-golang-part-1/)
-* Micriservice Architecture
+* Microservice Architecture
 * AI and ML
   * 
 * Serverless Architecture
 * Quantom computing
-* 
+* Cloud Native application
+* Azure/AWS
+* Security aspect in any technical solution
